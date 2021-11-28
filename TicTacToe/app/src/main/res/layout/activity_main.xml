@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:background="@drawable/gradient_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/playerOneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:text="PLAYER ONE"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:fontFamily="@font/wrongdelivery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/playerOneScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="0"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:fontFamily="@font/wrongdelivery"
+        app:layout_constraintEnd_toEndOf="@+id/playerOneTextView"
+        app:layout_constraintStart_toStartOf="@+id/playerOneTextView"
+        app:layout_constraintTop_toBottomOf="@+id/playerOneTextView" />
+
+    <TextView
+        android:id="@+id/playerTwoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:text="PLAYER TWO"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:fontFamily="@font/wrongdelivery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/playerTwoScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="0"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:fontFamily="@font/wrongdelivery"
+        app:layout_constraintEnd_toEndOf="@+id/playerTwoTextView"
+        app:layout_constraintStart_toStartOf="@+id/playerTwoTextView"
+        app:layout_constraintTop_toBottomOf="@+id/playerTwoTextView" />
+
+    <TextView
+        android:id="@+id/playerStatusTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:fontFamily="@font/wrongdelivery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerOneScoreTextView" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/resetButton"
+        app:layout_constraintTop_toBottomOf="@+id/playerStatusTextView">
+
+
+        <Button
+            app:fontFamily="@font/wrongdelivery"
+            android:id="@+id/tictactoeButton0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text=""
+            android:textSize="64sp"
+            app:backgroundTint="#252020"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".25"
+            app:layout_constraintHorizontal_bias=".05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".05"
+            app:layout_constraintWidth_percent=".30" />
+
+        <Button
+            app:fontFamily="@font/wrongdelivery"
+            android:id="@+id/tictactoeButton1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text=""
+            android:textSize="64sp"
+            app:backgroundTint="#252020"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".25"
+            app:layout_constraintHorizontal_bias=".5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".05"
+            app:layout_constraintWidth_percent=".30" />
+
+        <Button
+            app:fontFamily="@font/wrongdelivery"
+            android:id="@+id/tictactoeButton2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text=""
+            android:textSize="64sp"
+            app:backgroundTint="#252020"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".25"
+            app:layout_constraintHorizontal_bias=".95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".05"
+            app:layout_constraintWidth_percent=".30" />
+
+        <Button
+            app:fontFamily="@font/wrongdelivery"
+            android:id="@+id/tictactoeButton3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text=""
+            android:textSize="64sp"
+            app:backgroundTint="#252020"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".25"
+            app:layout_constraintHorizontal_bias=".05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".4"
+            app:layout_constraintWidth_percent=".30" />
+
+        <Button
+            android:id="@+id/tictactoeButton4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text=""
+            android:textSize="64sp"
+            app:fontFamily="@font/wrongdelivery"
+            app:backgroundTint="#252020"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".25"
+            app:layout_constraintHorizontal_bias=".5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".4"
+            app:layout_constraintWidth_percent=".30" />
+
+        <Button
+            android:id="@+id/tictactoeButton5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text=""
+            android:textSize="64sp"
+            app:fontFamily="@font/wrongdelivery"
+            app:backgroundTint="#252020"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".25"
+            app:layout_constraintHorizontal_bias=".95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".4"
+            app:layout_constraintWidth_percent=".30" />
+
+        <Button
+            android:id="@+id/tictactoeButton6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text=""
+            android:textSize="64sp"
+            app:fontFamily="@font/wrongdelivery"
+            app:backgroundTint="#252020"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".25"
+            app:layout_constraintHorizontal_bias=".05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".75"
+            app:layout_constraintWidth_percent=".30" />
+
+        <Button
+            android:id="@+id/tictactoeButton7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text=""
+            android:textSize="64sp"
+            app:fontFamily="@font/wrongdelivery"
+            app:backgroundTint="#252020"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".25"
+            app:layout_constraintHorizontal_bias=".5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".75"
+            app:layout_constraintWidth_percent=".30" />
+
+        <Button
+            android:id="@+id/tictactoeButton8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text=""
+            android:textSize="64sp"
+            app:fontFamily="@font/wrongdelivery"
+            app:backgroundTint="#252020"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".25"
+            app:layout_constraintHorizontal_bias=".95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".75"
+            app:layout_constraintWidth_percent=".30" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="25dp"
+        android:text="Reset Game"
+        app:fontFamily="@font/wrongdelivery"
+        app:backgroundTint="#252020"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
